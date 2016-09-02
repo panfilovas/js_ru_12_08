@@ -18,5 +18,10 @@ export default (Component) => {
         render() {
             return <Component {...this.props} isOpen = {this.state.isOpen} toggleOpen = {this.toggleOpen}/>
         }
+
+        //propTypes : {
+        //
+        //}
     }
+
 }
