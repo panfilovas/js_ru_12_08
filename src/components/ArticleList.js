@@ -24,7 +24,7 @@ export default class ArticleList extends Component {
     toggleOpenArticle = id => ev => {
         if (ev) ev.preventDefault()
         this.setState({
-            openArticleId: id
+            openArticleId: id == this.state.openArticleId ? null : id
         })
     }
 }
